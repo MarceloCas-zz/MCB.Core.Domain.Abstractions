@@ -3,7 +3,7 @@
     public interface IDomainEventHandler
     {
         // Properties
-        IEnumerable<IDomainEvent> RaisedDomainEvents { get; }
+        IEnumerable<IDomainEvent> RaisedDomainEventsCollection { get; }
 
         // Methods
         bool HasDomainEvents();
