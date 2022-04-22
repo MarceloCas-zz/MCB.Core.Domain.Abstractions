@@ -17,8 +17,8 @@ namespace MCB.Core.Domain.Abstractions.Tests.DomainEventsTests
             domainEvent.EventId.Should().NotBe(Guid.Empty);
             domainEvent.CorrelationId.Should().Be(Guid.Empty);
             domainEvent.TimeStamp.Should().BeAfter(default);
-            domainEvent.EventType.Should().NotBeNullOrWhiteSpace();
-            domainEvent.EventSchema.Should().BeNullOrWhiteSpace();
+            domainEvent.EventDataType.Should().NotBeNullOrWhiteSpace();
+            domainEvent.EventDataSchema.Should().BeNullOrWhiteSpace();
             domainEvent.EventData.Should().BeNullOrWhiteSpace();
             domainEvent.TenantId.Should().Be(Guid.Empty);
             domainEvent.ExecutionUser.Should().BeNullOrWhiteSpace();
