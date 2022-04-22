@@ -1,9 +1,13 @@
-﻿namespace MCB.Core.Domain.Abstractions.DomainEvents
+﻿using MCB.Core.Infra.CrossCutting.DesignPatterns.Abstractions.Observer;
+
+namespace MCB.Core.Domain.Abstractions.DomainEvents
 {
-    public interface IDomainEventHandler
+    public interface IDomainEventHandler<TDomainEvent>
+        : ISubscriber<TDomainEvent>
+        where TDomainEvent : IDomainEvent
     {
         // Properties
-        IEnumerable<IDomainEvent> RaisedDomainEventsCollection { get; }
+        IEnumerable<TDomainEvent> RaisedDomainEventsCollection { get; }
 
         // Methods
         bool HasDomainEvents();
