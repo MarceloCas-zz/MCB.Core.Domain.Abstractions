@@ -2,7 +2,7 @@
 
 namespace MCB.Core.Domain.Abstractions.DomainNotifications.Models
 {
-    public struct DomainNotification
+    public class DomainNotification
     {
         // Properties
         public DomainNotificationType DomainNotificationType { get; }
