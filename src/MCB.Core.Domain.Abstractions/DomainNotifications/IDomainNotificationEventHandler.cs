@@ -8,7 +8,7 @@ namespace MCB.Core.Domain.Abstractions.DomainNotifications
         where TDomainNotification : DomainNotification
     {
         // Properties
-        IEnumerable<TDomainNotification> RaisedDomainNotificationsCollection { get; }
+        IEnumerable<TDomainNotification> ReceivedDomainNotificationsCollection { get; }
 
         // Methods
         bool HasDomainNotifications();
