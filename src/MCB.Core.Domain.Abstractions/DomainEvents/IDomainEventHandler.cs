@@ -8,7 +8,7 @@ namespace MCB.Core.Domain.Abstractions.DomainEvents
         where TDomainEvent : DomainEvent
     {
         // Properties
-        IEnumerable<TDomainEvent> RaisedDomainEventsCollection { get; }
+        IEnumerable<TDomainEvent> ReceivedDomainEventsCollection { get; }
 
         // Methods
         bool HasDomainEvents();
