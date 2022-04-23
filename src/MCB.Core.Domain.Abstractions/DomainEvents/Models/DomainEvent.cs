@@ -18,7 +18,7 @@
         {
             EventId = Guid.NewGuid();
             TimeStamp = DateTimeOffset.UtcNow;
-            EventDataType = GetType().FullName;
+            EventDataType = String.Empty;
             EventDataSchema = string.Empty;
             EventData = string.Empty;
             ExecutionUser = string.Empty;
