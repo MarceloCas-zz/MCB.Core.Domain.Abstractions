@@ -1,9 +1,8 @@
-﻿namespace MCB.Core.Domain.Abstractions.DomainNotifications.Enums
+﻿namespace MCB.Core.Domain.Abstractions.DomainNotifications.Enums;
+
+public enum DomainNotificationType
 {
-    public enum DomainNotificationType
-    {
-        Information = 1,
-        Warning = 2,
-        Error = 3
-    }
+    Information = 1,
+    Warning = 2,
+    Error = 3
 }
