@@ -2,7 +2,7 @@
 
 namespace MCB.Core.Domain.Abstractions.DomainNotifications.Models;
 
-public class DomainNotification
+public record DomainNotification
 {
     // Properties
     public DomainNotificationType DomainNotificationType { get; }
