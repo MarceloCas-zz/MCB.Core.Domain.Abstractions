@@ -4,8 +4,14 @@ public record DomainEvent
 {
     // Properties
     public Guid TenantId { get; set; }
+    /// <remarks>
+    /// Auto generated
+    /// </remarks>
     public Guid EventId { get; set; }
     public Guid CorrelationId { get; set; }
+    /// <remarks>
+    /// Auto generated
+    /// </remarks>
     public DateTimeOffset TimeStamp { get; set; }
     public string EventDataType { get; set; }
     public string EventDataSchema { get; set; }
