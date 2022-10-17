@@ -7,6 +7,4 @@ public interface IDomainEventSubscriber
     : ISubscriber<IDomainEvent>
 {
     IEnumerable<IDomainEvent> DomainEventCollection { get; }
-
-    bool TryDequeue(out IDomainEvent? domainEvent);
 }
